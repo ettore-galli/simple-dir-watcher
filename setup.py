@@ -21,5 +21,10 @@ setup(
     install_requires=install_requires,
     test_requires=test_requires,
     python_requires=">=3.8",
-    include_package_data=True
+    include_package_data=True,
+    entry_points={
+        "console_scripts": [
+            "sdw=simple_dir_watcher.entrypoint:main"
+        ],
+    },
 )
